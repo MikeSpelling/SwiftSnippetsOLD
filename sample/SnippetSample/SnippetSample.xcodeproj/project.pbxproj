@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA617E1229E2779F0041EEFF /* SwiftSnippets in Frameworks */ = {isa = PBXBuildFile; productRef = CA617E1129E2779F0041EEFF /* SwiftSnippets */; };
 		CAB516E929E265EE00C7EE1B /* SnippetSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB516E829E265EE00C7EE1B /* SnippetSampleApp.swift */; };
 		CAB516EB29E265EE00C7EE1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB516EA29E265EE00C7EE1B /* ContentView.swift */; };
 		CAB516ED29E265EF00C7EE1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB516EC29E265EF00C7EE1B /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		CA3C96F229E2714B00540378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../README.md; sourceTree = "<group>"; };
+		CA617E1029E277530041EEFF /* SwiftSnippets */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftSnippets; path = ../../SwiftSnippets; sourceTree = "<group>"; };
 		CAB516E529E265EE00C7EE1B /* SnippetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnippetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB516E829E265EE00C7EE1B /* SnippetSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetSampleApp.swift; sourceTree = "<group>"; };
 		CAB516EA29E265EE00C7EE1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		CAB5170529E265EF00C7EE1B /* SnippetSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CAB5171729E2679500C7EE1B /* SnippetSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SnippetSample.entitlements; sourceTree = "<group>"; };
 		CAB5171829E267B200C7EE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAB9A6D029E26C2B0063E049 /* TestAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestAssets; path = SnippetSampleTests/TestAssets; sourceTree = "<group>"; };
+		CAB9A6D029E26C2B0063E049 /* TestAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestAssets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA617E1229E2779F0041EEFF /* SwiftSnippets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,14 +79,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA617E0D29E2771C0041EEFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA76412529E27512004B736A /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				CA617E1029E277530041EEFF /* SwiftSnippets */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		CAB516DC29E265EE00C7EE1B = {
 			isa = PBXGroup;
 			children = (
 				CAB516E729E265EE00C7EE1B /* SnippetSample */,
 				CAB516F829E265EF00C7EE1B /* SnippetSampleTests */,
-				CAB9A6D029E26C2B0063E049 /* TestAssets */,
 				CAB5170229E265EF00C7EE1B /* SnippetSampleUITests */,
+				CA76412529E27512004B736A /* Packages */,
 				CAB516E629E265EE00C7EE1B /* Products */,
+				CA617E0D29E2771C0041EEFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +137,7 @@
 		CAB516F829E265EF00C7EE1B /* SnippetSampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				CAB9A6D029E26C2B0063E049 /* TestAssets */,
 				CAB5171A29E2694900C7EE1B /* Code */,
 			);
 			path = SnippetSampleTests;
@@ -192,6 +212,9 @@
 			dependencies = (
 			);
 			name = SnippetSample;
+			packageProductDependencies = (
+				CA617E1129E2779F0041EEFF /* SwiftSnippets */,
+			);
 			productName = SnippetSample;
 			productReference = CAB516E529E265EE00C7EE1B /* SnippetSample.app */;
 			productType = "com.apple.product-type.application";
@@ -643,6 +666,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA617E1129E2779F0041EEFF /* SwiftSnippets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftSnippets;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CAB516DD29E265EE00C7EE1B /* Project object */;
 }

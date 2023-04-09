@@ -6,9 +6,21 @@
 //
 
 import SwiftUI
+import SwiftSnippets
+
+class WindowInitialisedHandler {
+    init() {
+        print("\nWindowGroup Initialised")
+        let snippets = SwiftSnippets()
+        snippets.runSnippets()
+    }
+}
 
 @main
 struct SnippetSampleApp: App {
+    
+    @State var initHandler = WindowInitialisedHandler()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
