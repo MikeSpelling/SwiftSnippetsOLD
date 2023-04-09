@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA3C96F229E2714B00540378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../../README.md; sourceTree = "<group>"; };
 		CAB516E529E265EE00C7EE1B /* SnippetSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnippetSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB516E829E265EE00C7EE1B /* SnippetSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetSampleApp.swift; sourceTree = "<group>"; };
 		CAB516EA29E265EE00C7EE1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 			children = (
 				CAB516EC29E265EF00C7EE1B /* Assets.xcassets */,
 				CAB5171829E267B200C7EE1B /* Info.plist */,
+				CA3C96F229E2714B00540378 /* README.md */,
 				CAB5171729E2679500C7EE1B /* SnippetSample.entitlements */,
 			);
 			path = Assets;
