@@ -1,0 +1,27 @@
+{
+  "configurations" : [
+    {
+      "id" : "AAC32645-DDA8-4692-ACF8-CAD0F711D95A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "locationScenario" : {
+      "identifier" : "London, England",
+      "referenceType" : "built-in"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:SnippetSample.xcodeproj",
+        "identifier" : "CAB516F429E265EF00C7EE1B",
+        "name" : "SnippetSampleTests"
+      }
+    }
+  ],
+  "version" : 1
+}
